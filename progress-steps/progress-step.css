@@ -1,0 +1,107 @@
+:root {
+  --circle-empty-color: rgb(222, 255, 230);
+  --fill-color: rgb(136, 209, 133);
+  --line-empty-color: rgb(231, 231, 231);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(238, 255, 236);
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding: 30px;
+  width: 40%;
+  min-width: 400px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.wrapper,
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  margin: 50px;
+  width: 90%;
+  position: relative;
+}
+.btns {
+  width: 50%;
+}
+.circle {
+  z-index: 1;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  width: 50px;
+  border-radius: 30px;
+  background-color: var(--circle-empty-color);
+  text-align: center;
+  transition: all ease-in 0.5s;
+  cursor: pointer;
+}
+.active {
+  transition: all ease-in 0.5s 0.2s;
+  background-color: var(--fill-color);
+  color: white;
+}
+.btns > button {
+  font-size: 16px;
+  border: none;
+  height: 40px;
+  width: 70px;
+  background-color: var(--circle-empty-color);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btns > button:hover {
+  background-color: var(--fill-color);
+}
+.btns > button:active {
+  transform: scale(95%);
+}
+
+.progress-line {
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+.empty {
+  width: 100%;
+  z-index: 0;
+  background-color: var(--line-empty-color);
+}
+.fill {
+  width: 0%;
+  z-index: 0;
+  background-color: var(--fill-color);
+  transition: all ease-in 0.5s;
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+.btn:disabled:hover {
+  background-color: var(--circle-empty-color);
+}
+.btn:disabled:active {
+  transform: scale(100%);
+}
