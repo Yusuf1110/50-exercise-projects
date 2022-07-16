@@ -1,0 +1,44 @@
+{
+  "id": "3526423",
+  "name": "50-fontend-projects",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7008947",
+      "name": "homepage",
+      "font_class": "homepage",
+      "unicode": "e702",
+      "unicode_decimal": 59138
+    },
+    {
+      "icon_id": "7008956",
+      "name": "like",
+      "font_class": "like",
+      "unicode": "e707",
+      "unicode_decimal": 59143
+    },
+    {
+      "icon_id": "7008979",
+      "name": "people",
+      "font_class": "people",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "7008905",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    },
+    {
+      "icon_id": "7008977",
+      "name": "other",
+      "font_class": "other",
+      "unicode": "e714",
+      "unicode_decimal": 59156
+    }
+  ]
+}
