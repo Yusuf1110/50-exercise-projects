@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(174, 87, 255);
+}
+.container {
+  padding: 10px 5px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  width: 0;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+.search-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.search-btn i {
+  font-size: 34px;
+}
+.search.active {
+  width: 200px;
+}
